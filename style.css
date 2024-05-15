@@ -5,36 +5,46 @@ body {
 }
 
 h1 {
+  font-family: inherit;
   font-size: xx-large;
-  font-weight: bold;
-  text-decoration: underline;
-  color: black;
+  font-weight: 600;
+  background-color: #f5f5f5;
+  color: #0c0c0b;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 3px solid;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 h2 {
   border: 2px solid;
   border-radius: 10px;
   margin: 10px auto;
-  padding: 10px;  
+  padding: 10px;
   color: #333333;
-  background-color:#ffffff;
+  background-color: #ffffff;
+  display: inline-block;
 }
 
 
 #startButton {
   font-family: inherit;
-  font-size: xx-large; 
+  font-size: x-large;
   font-weight: 500;
   background-color: #333333;
-  color: white; 
-  padding: 10px 16px; 
-  text-align: center; 
-  text-decoration: none; 
-  display: inline-block; 
-  border: 2px solid; 
-  border-radius: 8px; 
-  cursor: pointer; 
-  margin-top: 20px; 
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 
@@ -97,4 +107,3 @@ iframe {
     width: 90%;
   }
 }
-
