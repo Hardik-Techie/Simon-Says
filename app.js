@@ -18,6 +18,10 @@ function startGame() {
         console.log("Game Started");
         started = true;
         levelUp();
+        
+        // Clear local storage when the game starts for a new user
+        localStorage.removeItem("highestScore");
+        highestScore = 0;
     }
 }
 
@@ -57,38 +61,4 @@ function checkAns(idx) {
       if (level > highestScore) {
         // Update highest score if current level is higher
         highestScore = level;
-        localStorage.setItem("highestScore", highestScore); // Save highest score to local storage
-      }
-      setTimeout(levelUp, 1000);
-    }
-  } else {
-    h2.innerHTML = `Game Over! <br>Your score : <b>${level}</b> <br> Highest Score : <b>${highestScore}</b><br>Press any key to Start`;
-    document.querySelector("body").style.backgroundColor = "red";
-    setTimeout(function () {
-      document.querySelector("body").style.backgroundColor = "#e5eaf5";
-    }, 150);
-    reset();
-  }
-}
-
-function btnPress() {
-  let btn = this;
-  userFlash(btn);
-
-  userColor = btn.getAttribute("id");
-  userSeq.push(userColor);
-
-  checkAns(userSeq.length - 1);
-}
-
-let allBtns = document.querySelectorAll(".btn");
-for (btn of allBtns) {
-  btn.addEventListener("click", btnPress);
-}
-
-function reset() {
-  started = false;
-  gameSeq = [];
-  userSeq = [];
-  level = 0;
-}
+        localStorag
