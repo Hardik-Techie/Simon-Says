@@ -1,3 +1,4 @@
+let startButton = document.getElementById("startButton");
 let gameSeq = [];
 let userSeq = [];
 
@@ -7,13 +8,18 @@ let level = 0;
 let highestScore = localStorage.getItem("highestScore") || 0;
 let h2 = document.querySelector("h2");
 
-document.addEventListener("keypress", function () {
-  if (started == false) {
-    console.log("game Started");
-    started = true;
-    levelUp();
-  }
-});
+
+document.addEventListener("keypress", startGame);
+document.addEventListener("touchstart", startGame);
+startButton.addEventListener("click", startGame);
+
+function startGame() {
+    if (!started) {
+        console.log("Game Started");
+        started = true;
+        levelUp();
+    }
+}
 
 function gameFlash(btn) {
   btn.classList.add("flash");
@@ -59,7 +65,7 @@ function checkAns(idx) {
     h2.innerHTML = `Game Over! <br>Your score : <b>${level}</b> <br> Highest Score : <b>${highestScore}</b><br>Press any key to Start`;
     document.querySelector("body").style.backgroundColor = "red";
     setTimeout(function () {
-      document.querySelector("body").style.backgroundColor = "#fff685";
+      document.querySelector("body").style.backgroundColor = "#e5eaf5";
     }, 150);
     reset();
   }
