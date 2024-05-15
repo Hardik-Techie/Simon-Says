@@ -1,51 +1,37 @@
 # Simon Says Game
 
-This is a simple web-based Simon Says game where players must remember and repeat a sequence of colors and sounds.
-
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Instructions](#instructions)
-- [Demo](#demo)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
+![Preview](preview.png)
 
 ## Introduction
-
-The Simon Says Game is a classic memory game where players must follow a sequence of colored buttons that light up and produce sounds. The game starts with a simple sequence and becomes more challenging as the player progresses through levels.
+Simon Says Game is a classic memory game where players must repeat a sequence of colors and sounds in the same order that the game presents them. The game starts by displaying a sequence of colors, which the player must then repeat. With each successful repetition, the sequence becomes longer and more challenging.
 
 ## Features
-
-- Generates random sequences of colors for players to follow.
-- Provides feedback to the player on their progress and highest score.
-- Includes sounds and visual cues to enhance the gameplay experience.
-
-## Instructions
-
-To play the Simon Says Game:
-
-1. Open the [demo link](https://hardik-techie.github.io/Simon-Says-Game/) in your web browser.
-2. Press any key to start the game.
-3. Watch and listen as the buttons light up and produce sounds.
-4. Repeat the sequence by clicking the buttons in the correct order.
-5. The game gets progressively harder as you advance through levels.
-
-## Demo
-
-[![Simon Says Game Preview](preview.png)](https://hardik-techie.github.io/Simon-Says-Game/)
+- Start the game by pressing any key, touching the screen, or clicking the "Start Game" button.
+- Watch a tutorial video on how to play the game.
+- Test your memory and concentration skills as you progress through levels.
+- Compete for the highest score and try to beat your previous record.
+- Responsive design for optimal gameplay on various devices.
 
 ## Technologies Used
-
 - HTML
 - CSS
 - JavaScript
 
-## Contributing
+## How to Play
+1. Start the game by pressing any key, touching the screen, or clicking the "Start Game" button.
+2. Pay attention to the sequence of colors displayed by the game.
+3. Repeat the sequence by clicking on the colored buttons in the same order.
+4. The game will continue to increase the sequence length with each successful repetition.
+5. If you make a mistake or fail to repeat the sequence correctly, the game will end.
 
-Contributions are welcome! If you have any suggestions, improvements, or feature requests, feel free to open an issue or create a pull request.
+## Demo
+[Play the game](https://hardik-techie.github.io/Simon-Says-Game/)
+
+## Preview
+![Game Preview](preview.png)
+
+## Author
+[Your Name](https://github.com/yourusername)
 
 ## License
-
-This project is licensed under the [MIT License](LICENSE.md).
+This project is licensed under the [MIT License](LICENSE).
