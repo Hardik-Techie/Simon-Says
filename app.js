@@ -1,22 +1,34 @@
+let startButton = document.getElementById("startButton");
 let gameSeq = [];
 let userSeq = [];
+
 let btns = ["red", "blue", "green", "yellow"];
 let started = false;
 let level = 0;
-let highestScore = localStorage.getItem("highestScore") || 0;
+
+// Check if highestScore exists in localStorage
+let highestScore = localStorage.getItem("highestScore");
+
+// If highestScore doesn't exist, set it to 0
+if (highestScore === null || highestScore === undefined) {
+    highestScore = 0;
+} else {
+    // Convert highestScore to a number
+    highestScore = parseInt(highestScore);
+}
+
 let h2 = document.querySelector("h2");
-let startButton = document.getElementById("startButton");
 
 document.addEventListener("keypress", startGame);
 document.addEventListener("touchstart", startGame);
 startButton.addEventListener("click", startGame);
 
 function startGame() {
-  if (!started) {
-    console.log("Game Started");
-    started = true;
-    levelUp();
-  }
+    if (!started) {
+        console.log("Game Started");
+        started = true;
+        levelUp();
+    }
 }
 
 function gameFlash(btn) {
@@ -42,13 +54,14 @@ function levelUp() {
   let randColor = btns[randIdx];
   let randBtn = document.querySelector(`.${randColor}`);
   gameSeq.push(randColor);
+  console.log(gameSeq);
   gameFlash(randBtn);
 }
 
 function checkAns(idx) {
   if (userSeq[idx] === gameSeq[idx]) {
     if (userSeq.length == gameSeq.length) {
-      if (level >= highestScore) {
+      if (level >= highestScore) { // Changed to >= to ensure it updates only if the current level is greater than or equal to highestScore
         highestScore = level;
         localStorage.setItem("highestScore", highestScore);
       }
@@ -67,8 +80,10 @@ function checkAns(idx) {
 function btnPress() {
   let btn = this;
   userFlash(btn);
+
   userColor = btn.getAttribute("id");
   userSeq.push(userColor);
+
   checkAns(userSeq.length - 1);
 }
 
