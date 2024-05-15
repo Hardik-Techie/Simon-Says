@@ -5,7 +5,7 @@ let userSeq = [];
 let btns = ["red", "blue", "green", "yellow"];
 let started = false;
 let level = 0;
-let highestScore = localStorage.getItem("highestScore") || 0;
+let highestScore = localStorage.getItem("highestScore") || 0; // Retrieve highest score from local storage
 let h2 = document.querySelector("h2");
 
 
