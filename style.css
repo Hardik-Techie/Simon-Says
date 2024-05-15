@@ -1,6 +1,6 @@
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: #fff685;
+  background-color: #e5eaf5;
   text-align: center;
 }
 
@@ -8,8 +8,36 @@ h1 {
   font-size: xx-large;
   font-weight: bold;
   text-decoration: underline;
-  color: brown;
+  color: black;
 }
+
+h2 {
+  border: 2px solid;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 10px;  
+  color: #333333;
+  background-color:#ffffff;
+}
+
+
+#startButton {
+  font-family: inherit;
+  font-size: xx-large; 
+  font-weight: 500;
+  background-color: #333333;
+  color: white; 
+  padding: 10px 16px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  border: 2px solid; 
+  border-radius: 8px; 
+  cursor: pointer; 
+  margin-top: 20px; 
+}
+
+
 
 .btn-container {
   display: flex;
@@ -69,3 +97,4 @@ iframe {
     width: 90%;
   }
 }
+
