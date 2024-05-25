@@ -31,5 +31,3 @@ Simon Says Game is a classic memory game where players must repeat a sequence of
 ## Author
 [Hardik Srivastava](https://github.com/hardik-techie)
 
-## License
-This project is licensed under the [MIT License](LICENSE).
