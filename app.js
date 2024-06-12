@@ -7,7 +7,7 @@ let started = false;
 let level = 0;
 
 // Check if highestScore exists in localStorage
-let highestScore = localStorage.getItem("highestScore");
+let highestScore = sessionStorage.getItem("highestScore");
 
 // If highestScore doesn't exist, set it to 0
 if (highestScore === null || highestScore === undefined) {
@@ -63,7 +63,7 @@ function checkAns(idx) {
     if (userSeq.length == gameSeq.length) {
       if (level >= highestScore) { // Changed to >= to ensure it updates only if the current level is greater than or equal to highestScore
         highestScore = level;
-        localStorage.setItem("highestScore", highestScore);
+        sessionStorage.setItem("highestScore", highestScore);
       }
       setTimeout(levelUp, 1000);
     }
