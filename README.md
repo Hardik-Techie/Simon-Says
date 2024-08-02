@@ -23,7 +23,7 @@ Simon Says Game is a classic memory game where players must repeat a sequence of
 5. If you make a mistake or fail to repeat the sequence correctly, the game will end.
 
 ## Demo
-[Play the game](https://hardik-techie.github.io/Simon-Says-Game/)
+[Play the game](https://hardiksrivatavaa.github.io/Simon-Says-Game/)
 
 ## Preview
 ![Game Preview](preview.png)
